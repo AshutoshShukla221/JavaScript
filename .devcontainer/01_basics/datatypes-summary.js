@@ -22,7 +22,7 @@ const id=Symbol('123')
 
 const anotherid=Symbol('123')
 
-console.log(id===anotherid)
+// console.log(id===anotherid)
 
 
 //BigInt
@@ -33,7 +33,8 @@ const big=3n
 
 // console.log(typeof bigNumber)
 
-console.log(typeof big)
+// node datatypes-summary.js
+
 
 //Arrays
 
@@ -55,10 +56,38 @@ const myFunction=function(){
     console.log("Hello World")
 }
 
-console.log(typeof myObj)
+// console.log(typeof myObj)
 
 //Note- typeof() funtion is used to find the type of data stored in variable
 
 
 //read:
 //    // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//Stack(Primitive),Heap(Non-Primitive)
+
+
+//Stack Example
+let myGithubName="AshutoshShukla221"
+
+let anotherName=myGithubName
+anotherName="Books is good"
+// console.log(myGithubName)
+// console.log(anotherName)
+
+
+//Stack Example
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="ashutosh@google.com"
+
+console.log(userOne)
+console.log(userTwo)
+
